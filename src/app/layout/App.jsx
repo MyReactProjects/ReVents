@@ -1,18 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import { Container } from "semantic-ui-react";
+
+import EventDashboard from "../../features/event/EventDashboard/EventDashboard";
+import NavBar from "../../features/nav/NavBar/NavBar";
+
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App" >
-        <h1>Re-Vents </h1>
-        
+      <div>
+        <NavBar />
+        <Container className="main" >
+          <EventDashboard />
+        </Container>
       </div>
     );
   }
 }
 
 export default App;
-
-
