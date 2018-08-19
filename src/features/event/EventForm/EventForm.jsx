@@ -29,7 +29,7 @@ class EventForm extends Component {
           <Button positive type="submit">
             Submit
           </Button>
-          <Button type="button">Cancel</Button>
+          <Button onClick={this.props.handleCancel} type="button">Cancel</Button>
         </Form>
       </Segment>
     );
