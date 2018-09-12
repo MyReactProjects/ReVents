@@ -13,7 +13,7 @@ import UserDetailedPage from "../../features/user/UserDetailed/UserDetailedPage"
 import SettingDashboard from "../../features/user/Settings/SettingsDashboard";
 import EventForm from "../../features/event/EventForm/EventForm";
 import HomePage from "../../features/home/HomePage";
-import { TestComponent } from "../../features/testarea/testComponent";
+import TestComponent  from "../../features/testarea/TestComponent";
 
 class App extends Component {
   render() {

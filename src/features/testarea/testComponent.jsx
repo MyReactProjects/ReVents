@@ -2,16 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
 
-const mapState = (state) => ({
-    data: state.test.data
-})
 
 
-export class TestComponent extends Component {
 
-    componentDidMount () {
-        console.log(this.props.data)
-    }
+class TestComponent extends Component {
 
   render() {
     return (
@@ -22,5 +16,9 @@ export class TestComponent extends Component {
     )
   }
 }
+
+const mapState = (state) => ({
+    data: state.test.data
+})
 
 export default connect(mapState)(TestComponent)
