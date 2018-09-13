@@ -1,5 +1,7 @@
+import {createReducer} from '../../app/common/util/reducerUtil'
+
 const initialState = {
-    data: 43
+    data: 42
 }
 
 const testReducer = (state = initialState, action) => {
